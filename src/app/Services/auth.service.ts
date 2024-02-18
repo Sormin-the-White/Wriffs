@@ -41,6 +41,7 @@ export class AuthService {
     return this.loggedIn.asObservable();
   }
 
+  //Finally, the login function
   logIn(usernameOrEmail: string, password: string): Observable<any> {
     return this.dataService.postDataAsync(this.apiEndpoints.authentication.loginUser, { usernameOrEmail, password });
   }
