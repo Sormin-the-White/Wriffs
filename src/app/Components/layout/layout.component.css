@@ -1,0 +1,7 @@
+.grid {
+  min-height: calc(100vh - 5rem); /* Adjust as needed based on your navbar height */
+}
+
+li {
+  margin-bottom: 20px;
+}

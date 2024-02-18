@@ -1,0 +1,19 @@
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+.icon {
+  width: 20px; /* Adjust the width of the icon */
+  height: 20px; /* Adjust the height of the icon */
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 2px; /* Adjust the space between icon and text */
+}
+
+.text {
+  font-size: 14px; /* Adjust the font size of the text */
+  /* Add any additional styles for the text */
+}

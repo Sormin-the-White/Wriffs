@@ -1,0 +1,37 @@
+<div class="grid h-screen grid-cols-12">
+  <header class="bg-gray-800 text-white col-start-1 col-span-12 max-h-20">
+    <app-navbar></app-navbar>
+  </header>
+  <aside class="overflow-y-auto ml-auto border-r-2 border-b-2 border-r-indigo-500 border-b-indigo-100 p-4 col-start-1 col-span-2">
+    <!-- Left aside content goes here -->
+    <ul class="pr-6 mt-12">
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good job'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good job you'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good job goo'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good job hetyo'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good job here we go'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good work'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good there'"></app-icon-link></li>
+      <li><app-icon-link [iconUrl]="'assets/Icons/cpu.png'" [linkText]="'good now'"></app-icon-link></li>
+    </ul>
+  </aside>
+
+  <div class="main-content col-start-3 col-span-8 overflow-y-auto scroll">
+    <div class="grid">
+      <main class="flex flex-col items-center">
+        <!-- Main content area, where routed components will be displayed -->
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+  </div>
+
+  <aside class="mr-auto overflow-y-auto pt-4 pl-10 border-l-2 border-b-2 border-l-indigo-500 border-b-indigo-100 col-start-11 col-span-2">
+    <!-- Right aside content goes here -->
+    <ul>
+      <li><a href="#">Link 4</a></li>
+      <li><a href="#">Link 5</a></li>
+      <li><a href="#">Link 6</a></li>
+    </ul>
+  </aside>
+</div>

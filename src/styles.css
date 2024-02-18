@@ -1,0 +1,69 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Roboto', sans-serif; /* Use the font family you linked */
+  overflow-y: hidden;
+  scrollbar-width: 2px; /* Set the width of the scrollbar */
+}
+
+.w-1\/8 {
+  width: 12.5%;
+}
+.w-1\/9 {
+  width: 11.1%;
+}
+.w-1\/10 {
+  width: 10%;
+}
+.w-1\/11 {
+  width: 9%;
+}
+
+.custom-modal-container {
+  width: 90% !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* styles.css */
+/* Style the main content area scrollbar */
+.main-content {
+  overflow-y: auto; /* Allow scrolling only in the main content area */
+  scrollbar-width: calc(1rem - 2px);
+}
+
+/* For WebKit-based browsers like Chrome and Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  body::-webkit-scrollbar {
+    width: 2px; /* Adjust the width of the scrollbar */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Set the color of the scrollbar thumb with light opacity */
+    border-radius: 4px; /* Set the border radius of the scrollbar thumb */
+  }
+
+  body::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Set the color of the scrollbar track with light opacity */
+  }
+}
+
+/* For WebKit-based browsers like Chrome and Safari */
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .main-content::-webkit-scrollbar {
+    width: calc(.5rem - 2px); /* Adjust the width of the scrollbar */
+  }
+
+  .main-content::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2); /* Set the color of the scrollbar thumb with light opacity */
+    border-radius: 4px; /* Set the border radius of the scrollbar thumb */
+  }
+
+  .main-content::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1); /* Set the color of the scrollbar track with light opacity */
+  }
+}

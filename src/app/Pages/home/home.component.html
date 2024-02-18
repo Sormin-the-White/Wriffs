@@ -1,0 +1,31 @@
+<div class="w-full flex flex-col items-center">
+  <div class="w-96 h-[88px] flex-col justify-start items-start gap-1.5 inline-flex m-12">
+    <div class="text-slate-900 text-sm font-medium font-sans leading-tight">Email</div>
+    <div class="w-96 justify-start items-start gap-2 inline-flex">
+        <div class="grow shrink basis-0 flex-col justify-start items-start gap-1.5 inline-flex">
+            <input placeholder="Email" class="text-center self-stretch pl-3 py-2 bg-white rounded-md border border-slate-300 justify-start items-center inline-flex"/>
+        </div>
+        <button class="px-4 py-2 bg-slate-900 rounded-md justify-center items-center gap-2.5 flex text-white">
+            Subscribe
+        </button>
+    </div>
+    <div class="text-slate-500 text-sm font-normal font-sans leading-tight">Enter your email address</div>
+  </div>
+  <div class="m-12">
+    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius quas ex dolorum fuga aspernatur cumque ipsum repellat hic, doloremque error sunt amet tempora molestias facere. Perspiciatis rem non provident cumque.
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi amet maxime nemo explicabo nisi veritatis, a recusandae ut itaque, quis architecto consequatur, est totam. Quos rem quae vitae inventore!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse ab assumenda alias veniam dolorem, pariatur libero quam nam fugit ad voluptas et laudantium eligendi error cum ex, nemo sed tempora!</p>
+  </div>
+  @if (prompt !== '' || genre !== ''){
+    <p class="mb-1 font-bold italic"> Today's Genre: {{ genre }} </p>
+    <p class="mb-5"> {{ prompt }} </p>
+  }
+  @else {
+    <p>Loading Today's Prompt...</p>
+  }
+  <hr class="w-full border border-black full-width">
+  <p [ngClass]="i === 0 ? 'mt-12' : 'mt-2'" *ngFor="let item of strList; let i = index">
+    {{ item }}
+  </p>
+</div>

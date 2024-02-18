@@ -1,0 +1,22 @@
+<!-- navbar.component.html -->
+<nav class="bg-gray-800 flex justify-between items-center text-white h-20 border-b-2 border-indigo-400 p-4">
+  <div>
+    <a routerLink="/" class="text-white">Home</a>
+    <a routerLink="/test" class="text-white">Pipe</a>
+  </div>
+  <div>
+    @if (!isLoggedIn) {
+      <ng-container class="mr-2">
+        <button mat-raised-button (click)="openLoginDialog()" class="text-white">
+          @if (!isLoggedIn) {Login}
+          @if (isLoggedIn)
+          {
+            <ng-container class="mr-2">
+              <span>Welcome, {{ username }}</span>
+            </ng-container>
+          }
+        </button>
+      </ng-container>
+    }
+  </div>
+</nav>
